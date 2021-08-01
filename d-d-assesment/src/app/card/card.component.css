@@ -1,0 +1,50 @@
+.card{
+    height: 240px;
+    width: 352px;  
+    margin: 0 25px 25px 0;
+}
+table{
+  font-size: 10px;
+  border: none;
+}
+mark{
+  background-color: red;
+  color: white;
+}
+.outline1{
+  border:1px solid rgb(162, 0, 255);
+  color: rgb(162, 0, 255);
+  text-align: center;
+}
+.outline2{
+  border:1px solid rgb(255, 174, 0);
+  color: rgb(255, 174, 0);
+  text-align: center;
+}
+.colr1{
+  color: green;
+  font-size: 14px;
+}
+.colr11{
+  color: green;
+  font-size: 12px;
+}
+.colr2{
+  color: red;
+  font-size: 14px;
+}
+.colr3{
+  color:black;
+}
+.borderless td, .borderless th {
+  border: none;
+}
+.topalign{
+  vertical-align: text-top;
+  height: 00px;
+}
+.bottomborder {
+  border-bottom: 1pt solid black;
+}
+
+

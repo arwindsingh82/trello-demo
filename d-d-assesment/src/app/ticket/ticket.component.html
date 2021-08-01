@@ -1,0 +1,48 @@
+<!-- First container start -->
+<div class="example-container container-fluid">
+  <h2>Open</h2>
+  <div cdkDropList #openList="cdkDropList" [cdkDropListData]="openLists" [cdkDropListConnectedTo]="[wipList]"
+    class="example-list" (cdkDropListDropped)="drop($event)">   
+    <ng-container *ngFor="let open of openLists">
+      <app-card [parentData]="open">
+      </app-card>
+    </ng-container>    
+  </div>
+</div>
+<!-- First container end -->
+<!-- Second container start -->
+<div class="example-container">
+  <h2>WIP</h2>
+  <div cdkDropList #wipList="cdkDropList" [cdkDropListData]="wipLists" [cdkDropListConnectedTo]="[readyList]"
+    class="example-list" (cdkDropListDropped)="drop($event)">
+   
+    <ng-container *ngFor="let wip of wipLists">
+      <app-card [parentData]="wip">
+      </app-card>
+    </ng-container>    
+  </div>
+</div>
+<!-- second container end -->
+<!-- Third container start -->
+<div class="example-container">
+  <h2>Ready</h2>
+  <div cdkDropList #readyList="cdkDropList" [cdkDropListData]="readyLists" [cdkDropListConnectedTo]="[paymentList]"
+    class="example-list" (cdkDropListDropped)="drop($event)">   
+    <ng-container *ngFor="let ready of readyLists">
+      <app-card [parentData]="ready">
+      </app-card>
+    </ng-container>    
+  </div>
+</div>
+<!-- third container end  -->
+<!-- fourth container start  -->
+<div class="example-container">
+  <h2>Payment Due</h2>
+  <div cdkDropList #paymentList="cdkDropList" [cdkDropListData]="paymentLists" [cdkDropListConnectedTo]="[]"
+    class="example-list" (cdkDropListDropped)="drop($event)">   
+    <ng-container *ngFor="let payment of paymentLists">
+      <app-card [parentData]="payment">
+      </app-card>
+    </ng-container>    
+  </div>
+</div>

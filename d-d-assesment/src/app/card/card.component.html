@@ -1,0 +1,93 @@
+<!-- card start -->
+
+<div class="example-box" class="card" cdkDrag>
+  <div class="card-body">
+    <div class="container">
+      <table class="table borderless">
+        <tbody>
+          <tr>
+            <td>
+              <div class="colr1"><b>#{{open?.id}}</b></div>
+            </td>
+            <td>
+              <div><mark>PAYMENT DUE</mark></div>
+            </td>
+            <td>
+              <div class="colr3"><i class="fa fa-paperclip" aria-hidden="true"> Repair Order</i></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="outline1">WASHING</div>
+            </td>
+            <td>
+              <div class="outline2">{{open?.name}}</div>
+            </td>
+            <td>
+              <div class="colr3"><i class="fa fa-paperclip" aria-hidden="true"> Invoice</i></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="topalign"><i class="fa fa-car" aria-hidden="true"></i><span> {{open?.carname}}</span>
+              </div>
+            </td>
+          </tr>
+          <tr class="bottomborder">
+            <td>
+              <div><i class="fa fa-user" aria-hidden="true"></i><span> {{open?.carowner}}</span></div>
+            </td>
+            <td>
+              <div></div>
+            </td>
+            <td>
+              <div class="colr11"><i class="fa fa-whatsapp" aria-hidden="true"> Whatsapp</i></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="topalign">INVOICE</div>
+            </td>
+            <td>
+              <div class="topalign">CREATED BY</div>
+            </td>
+            <td>
+              <div class="topalign">COMPLETION DATE</div>
+            </td>
+          </tr>
+          <tr class="bottomborder">
+            <td>
+              <div><b>{{open?.invoice}}</b></div>
+            </td>
+            <td>
+              <div><b>{{open?.created}}</b></div>
+            </td>
+            <td>
+              <div><b>{{open?.date}}</b></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="topalign">TOTAL:</div>
+            </td>
+            <td></td>
+            <td>
+              <div class="topalign">AMOUNT DUE</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div><b>{{open?.total}}</b></div>
+            </td>
+            <td></td>
+            <td>
+              <div class="colr2"><b>{{open?.due}}</b></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- card end -->
